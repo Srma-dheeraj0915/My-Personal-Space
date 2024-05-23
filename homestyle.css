@@ -1,0 +1,91 @@
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffcc00; /* Yellow */
+        }
+        article.left,
+        section.right {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animated {
+            animation: fadeIn 1s ease-out;
+        }
+
+        /* Scroll effects */
+        .scroll-effect {
+            transition: transform 0.5s ease;
+        }
+        .scroll-effect:hover {
+            transform: scale(1.05);
+        }
+
+        /* Split sections */
+        .split-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .left,
+        .right {
+            width: calc(30% - 40px);
+        }
+
+        /* Dynamic backgrounds */
+        .dynamic-bg {
+            background-image: url('https://source.unsplash.com/random/800x600');
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            transition: background-image 0.5s ease;
+        }

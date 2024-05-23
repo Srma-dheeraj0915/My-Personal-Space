@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('https://img.freepik.com/free-photo/notebook-with-coffee-cup-camera-glasses-table_23-2148043918.jpg?t=st=1716473749~exp=1716477349~hmac=f9a6715beaf43ac99a1ed43a3da852e905eb437c5df2a785ae98174f32ae88b7&w=740');
+    display: flex;
+    flex-direction: column; /* Align elements vertically */
+    justify-content: flex-start; /* Align elements to the top of the page */
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    background-color: #1a1a1d;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 20px; /* Adjust padding to make elements smaller */
+    max-width: 600px; /* Adjust maximum width */
+    width: 100%;
+    animation: fade-in 0.5s ease-out;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px; /* Add margin to separate from header and nav */
+}
+
+/* Headings */
+h1 {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    color: #b8b8b8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px; /* Adjust margin */
+    font-size: 2rem; /* Adjust font size */
+}
+
+/* Text Area */
+textarea {
+    width: 100%;
+    height: 150px; /* Adjust height */
+    padding: 10px; /* Adjust padding */
+    font-size: 14px; /* Adjust font size */
+}
+
+/* Password Input */
+input[type="password"] {
+    width: 100%;
+    padding: 8px; /* Adjust padding */
+    font-size: 14px; /* Adjust font size */
+    margin-top: 10px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 8px; /* Adjust padding */
+    font-size: 14px; /* Adjust font size */
+    margin-top: 10px;
+}
+
+/* Entries Container */
+#entries-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid columns */
+    grid-gap: 10px; /* Adjust grid gap */
+}
+
+.entry {
+    padding: 8px; /* Adjust padding */
+    font-size: 14px; /* Adjust font size */
+}
+
+/* Decorative Elements */
+.container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://source.unsplash.com/random/800x600?secret,mystery');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/* Header and Nav */
+header,
+nav {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
